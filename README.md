@@ -6,6 +6,7 @@ A simple application that streams a video file as an RTSP stream using FFmpeg.
 
 -   [Docker](https://www.docker.com/get-started)
 -   [Docker Compose](https://docs.docker.com/compose/install/)
+-   [Node.js](https://nodejs.org/) (for local development)
 
 ## Getting Started
 
@@ -25,7 +26,17 @@ Place a video file named `sample.mp4` in the root directory of the project. This
 cp /path/to/your/video.mp4 ./sample.mp4
 ```
 
-### 3. Run with Docker Compose
+### 3. Install dependencies
+
+Before running the containers, install the required Node.js dependencies:
+
+```bash
+npm install
+```
+
+This will install all dependencies specified in package.json, including fluent-ffmpeg.
+
+### 4. Run with Docker Compose
 
 Build and start the containers:
 
